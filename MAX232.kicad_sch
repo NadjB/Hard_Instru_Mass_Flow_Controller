@@ -1,860 +1,2142 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid d2c411fd-60aa-4a7d-9ace-6449cbd2aa05)
-
-  (paper "A4")
-
-  (lib_symbols
-    (symbol "Device:C_Polarized" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
-      (property "Reference" "C" (at 0.635 2.54 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "C_Polarized" (at 0.635 -2.54 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Footprint" "" (at 0.9652 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "cap capacitor" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Polarized capacitor" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "CP_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "C_Polarized_0_1"
-        (rectangle (start -2.286 0.508) (end 2.286 1.016)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.778 2.286)
-            (xy -0.762 2.286)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.27 2.794)
-            (xy -1.27 1.778)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (rectangle (start 2.286 -0.508) (end -2.286 -1.016)
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-      )
-      (symbol "C_Polarized_1_1"
-        (pin passive line (at 0 3.81 270) (length 2.794)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -3.81 90) (length 2.794)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Interface_UART:MAX232" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-      (property "Reference" "U" (at -2.54 28.575 0)
-        (effects (font (size 1.27 1.27)) (justify right))
-      )
-      (property "Value" "MAX232" (at -2.54 26.67 0)
-        (effects (font (size 1.27 1.27)) (justify right))
-      )
-      (property "Footprint" "" (at 1.27 -26.67 0)
-        (effects (font (size 1.27 1.27)) (justify left) hide)
-      )
-      (property "Datasheet" "http://www.ti.com/lit/ds/symlink/max232.pdf" (at 0 2.54 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "rs232 uart transceiver line-driver" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Dual RS232 driver/receiver, 5V supply, 120kb/s, 0C-70C" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "SOIC*P1.27mm* DIP*W7.62mm* TSSOP*4.4x5mm*P0.65mm*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "MAX232_0_0"
-        (text "LOGIC" (at -11.43 -22.86 0)
-          (effects (font (size 1.27 1.27)))
-        )
-        (text "RS232" (at 11.43 -22.86 0)
-          (effects (font (size 1.27 1.27)))
-        )
-      )
-      (symbol "MAX232_0_1"
-        (rectangle (start -15.24 -25.4) (end 15.24 25.4)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-        (circle (center -2.54 -17.78) (radius 0.635)
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (circle (center -2.54 -12.7) (radius 0.635)
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -3.81 -7.62)
-            (xy -8.255 -7.62)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -3.81 -2.54)
-            (xy -8.255 -2.54)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -3.175 -17.78)
-            (xy -8.255 -17.78)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -3.175 -12.7)
-            (xy -8.255 -12.7)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.27 -7.62)
-            (xy 6.35 -7.62)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.27 -2.54)
-            (xy 6.35 -2.54)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.905 -17.78)
-            (xy 6.35 -17.78)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.905 -12.7)
-            (xy 6.35 -12.7)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -3.81 -5.715)
-            (xy -3.81 -9.525)
-            (xy 0 -7.62)
-            (xy -3.81 -5.715)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -3.81 -0.635)
-            (xy -3.81 -4.445)
-            (xy 0 -2.54)
-            (xy -3.81 -0.635)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.905 -15.875)
-            (xy 1.905 -19.685)
-            (xy -1.905 -17.78)
-            (xy 1.905 -15.875)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.905 -10.795)
-            (xy 1.905 -14.605)
-            (xy -1.905 -12.7)
-            (xy 1.905 -10.795)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (circle (center 0.635 -7.62) (radius 0.635)
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (circle (center 0.635 -2.54) (radius 0.635)
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "MAX232_1_1"
-        (pin passive line (at -20.32 22.86 0) (length 5.08)
-          (name "C1+" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at -20.32 -7.62 0) (length 5.08)
-          (name "T2IN" (effects (font (size 1.27 1.27))))
-          (number "10" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at -20.32 -2.54 0) (length 5.08)
-          (name "T1IN" (effects (font (size 1.27 1.27))))
-          (number "11" (effects (font (size 1.27 1.27))))
-        )
-        (pin output line (at -20.32 -12.7 0) (length 5.08)
-          (name "R1OUT" (effects (font (size 1.27 1.27))))
-          (number "12" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at 20.32 -12.7 180) (length 5.08)
-          (name "R1IN" (effects (font (size 1.27 1.27))))
-          (number "13" (effects (font (size 1.27 1.27))))
-        )
-        (pin output line (at 20.32 -2.54 180) (length 5.08)
-          (name "T1OUT" (effects (font (size 1.27 1.27))))
-          (number "14" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at 0 -30.48 90) (length 5.08)
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "15" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at 0 30.48 270) (length 5.08)
-          (name "VCC" (effects (font (size 1.27 1.27))))
-          (number "16" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_out line (at 20.32 10.16 180) (length 5.08)
-          (name "VS+" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -20.32 15.24 0) (length 5.08)
-          (name "C1-" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 20.32 22.86 180) (length 5.08)
-          (name "C2+" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 20.32 15.24 180) (length 5.08)
-          (name "C2-" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_out line (at 20.32 2.54 180) (length 5.08)
-          (name "VS-" (effects (font (size 1.27 1.27))))
-          (number "6" (effects (font (size 1.27 1.27))))
-        )
-        (pin output line (at 20.32 -7.62 180) (length 5.08)
-          (name "T2OUT" (effects (font (size 1.27 1.27))))
-          (number "7" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at 20.32 -17.78 180) (length 5.08)
-          (name "R2IN" (effects (font (size 1.27 1.27))))
-          (number "8" (effects (font (size 1.27 1.27))))
-        )
-        (pin output line (at -20.32 -17.78 0) (length 5.08)
-          (name "R2OUT" (effects (font (size 1.27 1.27))))
-          (number "9" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "PCM_4ms_Power-symbol:+5V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "+5V" (at 0 3.556 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "+5V_0_1"
-        (polyline
-          (pts
-            (xy -0.762 1.27)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy 0.762 1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "+5V_1_1"
-        (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+5V" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "PCM_4ms_Power-symbol:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -6.35 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "GND" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "GND_0_1"
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 -1.27)
-            (xy 1.27 -1.27)
-            (xy 0 -2.54)
-            (xy -1.27 -1.27)
-            (xy 0 -1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "GND_1_1"
-        (pin power_in line (at 0 0 270) (length 0) hide
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-  )
-
-  (junction (at 130.81 50.8) (diameter 0) (color 0 0 0 0)
-    (uuid 19e165d7-772c-4bcb-9bf3-90b61f1c33f1)
-  )
-
-  (wire (pts (xy 184.15 96.52) (xy 184.15 86.36))
-    (stroke (width 0) (type default))
-    (uuid 143a54c8-1a74-4f12-8df0-6ed4affb52fc)
-  )
-  (wire (pts (xy 151.13 114.3) (xy 156.21 114.3))
-    (stroke (width 0) (type default))
-    (uuid 281f021b-d823-453f-9956-08d2195ca5b3)
-  )
-  (wire (pts (xy 151.13 81.28) (xy 157.48 81.28))
-    (stroke (width 0) (type default))
-    (uuid 2cfe1446-da79-4075-b02b-418d3cf8a8b8)
-  )
-  (wire (pts (xy 104.14 81.28) (xy 110.49 81.28))
-    (stroke (width 0) (type default))
-    (uuid 2d8a20ba-ad14-4ad0-b2d3-10d139ed10f8)
-  )
-  (wire (pts (xy 173.99 104.14) (xy 173.99 106.68))
-    (stroke (width 0) (type default))
-    (uuid 2ec62886-c263-4d7f-9faa-7d7c5e2c1ec6)
-  )
-  (wire (pts (xy 151.13 104.14) (xy 156.21 104.14))
-    (stroke (width 0) (type default))
-    (uuid 33d331d1-07db-4851-ad37-521b1028d1bf)
-  )
-  (wire (pts (xy 151.13 93.98) (xy 173.99 93.98))
-    (stroke (width 0) (type default))
-    (uuid 3463f0ef-3bf6-4806-ba49-1a128d1bdc86)
-  )
-  (wire (pts (xy 130.81 48.26) (xy 130.81 50.8))
-    (stroke (width 0) (type default))
-    (uuid 3bc57329-f8b9-4fe1-a60d-b6800e6743a5)
-  )
-  (wire (pts (xy 105.41 109.22) (xy 110.49 109.22))
-    (stroke (width 0) (type default))
-    (uuid 4eeb75fb-2353-4973-86ae-02aa7488ac14)
-  )
-  (wire (pts (xy 151.13 86.36) (xy 184.15 86.36))
-    (stroke (width 0) (type default))
-    (uuid 5594c2b6-1f00-4502-81d8-91e20ee82757)
-  )
-  (wire (pts (xy 105.41 104.14) (xy 110.49 104.14))
-    (stroke (width 0) (type default))
-    (uuid 946207b1-8a78-458a-9a03-ad0f78ceeb3a)
-  )
-  (wire (pts (xy 151.13 109.22) (xy 156.21 109.22))
-    (stroke (width 0) (type default))
-    (uuid 9c06715e-bd82-4cd3-96ef-8a8444c12aa3)
-  )
-  (wire (pts (xy 184.15 104.14) (xy 184.15 106.68))
-    (stroke (width 0) (type default))
-    (uuid a28d827c-10a2-4167-850b-1421684d0d43)
-  )
-  (wire (pts (xy 105.41 99.06) (xy 110.49 99.06))
-    (stroke (width 0) (type default))
-    (uuid a807b939-9d1c-4d2e-8ac0-c7aecaca3464)
-  )
-  (wire (pts (xy 173.99 93.98) (xy 173.99 96.52))
-    (stroke (width 0) (type default))
-    (uuid c23f6835-0178-486a-8cbb-85b26348fcd2)
-  )
-  (wire (pts (xy 130.81 127) (xy 130.81 129.54))
-    (stroke (width 0) (type default))
-    (uuid c457e9f1-704a-4f50-a8da-f724abd5ac4a)
-  )
-  (wire (pts (xy 138.43 52.07) (xy 138.43 50.8))
-    (stroke (width 0) (type default))
-    (uuid cba9d8a9-949b-4f8d-acd1-28d1f869c3ea)
-  )
-  (wire (pts (xy 151.13 73.66) (xy 157.48 73.66))
-    (stroke (width 0) (type default))
-    (uuid d561e58a-15b6-44a4-a80f-d8553646fd21)
-  )
-  (wire (pts (xy 151.13 99.06) (xy 156.21 99.06))
-    (stroke (width 0) (type default))
-    (uuid dc1edb14-4a8d-495f-9040-7776ab8d2d47)
-  )
-  (wire (pts (xy 105.41 114.3) (xy 110.49 114.3))
-    (stroke (width 0) (type default))
-    (uuid e6148104-baa3-43d7-95e1-58ed6cfb0d5d)
-  )
-  (wire (pts (xy 130.81 50.8) (xy 130.81 66.04))
-    (stroke (width 0) (type default))
-    (uuid e7ab5d09-f1c0-4d5b-b5f3-33a2a57081da)
-  )
-  (wire (pts (xy 104.14 73.66) (xy 110.49 73.66))
-    (stroke (width 0) (type default))
-    (uuid e942415e-9eae-43e8-b7dc-83a1f5e5d139)
-  )
-  (wire (pts (xy 138.43 50.8) (xy 130.81 50.8))
-    (stroke (width 0) (type default))
-    (uuid f3a3b49b-e253-4f5c-940b-bafeba040cf5)
-  )
-  (wire (pts (xy 138.43 59.69) (xy 138.43 62.23))
-    (stroke (width 0) (type default))
-    (uuid f9bd107f-88ca-4624-9067-0e8ac9154dc6)
-  )
-
-  (text "RS232 ±12v" (at 182.88 181.61 0)
-    (effects (font (size 10 10)) (justify left bottom))
-    (uuid b6212b3b-6cfa-4a70-85b1-ebcaf1b068dc)
-  )
-
-  (hierarchical_label "R2_Out" (shape input) (at 105.41 114.3 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 18aa3f67-75d5-422b-afbb-8a32d73e7e96)
-  )
-  (hierarchical_label "R2_In" (shape input) (at 156.21 114.3 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 345f53c2-9e1f-45fc-9953-36b28f00c1ba)
-  )
-  (hierarchical_label "T2_In" (shape input) (at 105.41 104.14 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 538a04ff-88ca-4021-82bd-f6a98eb9555c)
-  )
-  (hierarchical_label "R1_In" (shape input) (at 156.21 109.22 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 579aebb6-dc35-4e3e-ab8c-d1b40ab2c102)
-  )
-  (hierarchical_label "R1_Out" (shape input) (at 105.41 109.22 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 81dd2889-1d41-4c92-ba65-84bef5d57f89)
-  )
-  (hierarchical_label "T1_In" (shape input) (at 105.41 99.06 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid a0939d19-5e8d-4a06-a825-4b7f47f2b8eb)
-  )
-  (hierarchical_label "T2_Out" (shape input) (at 156.21 104.14 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid c3358317-5883-4868-becd-c7ddb776b78c)
-  )
-  (hierarchical_label "T1_Out" (shape input) (at 156.21 99.06 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid d45934f6-69e4-41da-b24d-783a714980b9)
-  )
-
-  (symbol (lib_id "PCM_4ms_Power-symbol:+5V") (at 130.81 48.26 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 03a0fba9-6379-48bb-a8e3-9dedc4ed2f5e)
-    (property "Reference" "#PWR04" (at 130.81 52.07 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 130.81 44.45 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 130.81 48.26 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 130.81 48.26 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 2fbaecf8-010d-4729-8f3a-e588ecc767c3))
-    (instances
-      (project "MAX232"
-        (path "/7aad7925-27f0-4b66-834a-6e436d0799e4"
-          (reference "#PWR04") (unit 1)
-        )
-      )
-      (project "MFC"
-        (path "/b2d5fb00-0584-4253-bf32-ef41fb78b640/ddef96f8-f009-4550-b86e-4232ef25eba1"
-          (reference "#PWR0107") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C_Polarized") (at 138.43 55.88 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 09aefab9-60e0-4ab3-b4ed-94a756e13676)
-    (property "Reference" "C5" (at 139.065 53.34 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "1µF" (at 139.065 58.42 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" (at 139.3952 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 138.43 55.88 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 2d73ba42-efc8-4bff-af7c-5f74f9675d31))
-    (pin "2" (uuid b1aa878d-e299-4638-a2df-7c02cc1cd2c0))
-    (instances
-      (project "MAX232"
-        (path "/7aad7925-27f0-4b66-834a-6e436d0799e4"
-          (reference "C5") (unit 1)
-        )
-      )
-      (project "MFC"
-        (path "/b2d5fb00-0584-4253-bf32-ef41fb78b640/ddef96f8-f009-4550-b86e-4232ef25eba1"
-          (reference "C10") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "PCM_4ms_Power-symbol:GND") (at 184.15 106.68 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 25e8b1ef-ecaf-4347-a5e0-2802af48d702)
-    (property "Reference" "#PWR05" (at 184.15 113.03 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 187.96 109.22 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 184.15 106.68 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 184.15 106.68 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 0bf17cf5-4db7-42c0-9087-63db8a2e46ba))
-    (instances
-      (project "MAX232"
-        (path "/7aad7925-27f0-4b66-834a-6e436d0799e4"
-          (reference "#PWR05") (unit 1)
-        )
-      )
-      (project "MFC"
-        (path "/b2d5fb00-0584-4253-bf32-ef41fb78b640/ddef96f8-f009-4550-b86e-4232ef25eba1"
-          (reference "#PWR012") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "PCM_4ms_Power-symbol:GND") (at 138.43 62.23 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 3a2d1707-a96d-4028-9f8a-33788a3fb9c6)
-    (property "Reference" "#PWR02" (at 138.43 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 142.24 64.77 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 138.43 62.23 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 138.43 62.23 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 8b1a0f11-f516-4462-953a-a8d9994c183b))
-    (instances
-      (project "MAX232"
-        (path "/7aad7925-27f0-4b66-834a-6e436d0799e4"
-          (reference "#PWR02") (unit 1)
-        )
-      )
-      (project "MFC"
-        (path "/b2d5fb00-0584-4253-bf32-ef41fb78b640/ddef96f8-f009-4550-b86e-4232ef25eba1"
-          (reference "#PWR010") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C_Polarized") (at 184.15 100.33 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 76c6a364-df30-4eaa-8ac6-b3e3104f2543)
-    (property "Reference" "C3" (at 184.785 97.79 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "1µF" (at 184.785 102.87 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" (at 185.1152 104.14 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 184.15 100.33 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid f592f8ef-1327-4193-bef2-43c116e42cf2))
-    (pin "2" (uuid bd12b5c2-c4ec-4613-b70f-188fba3975b2))
-    (instances
-      (project "MAX232"
-        (path "/7aad7925-27f0-4b66-834a-6e436d0799e4"
-          (reference "C3") (unit 1)
-        )
-      )
-      (project "MFC"
-        (path "/b2d5fb00-0584-4253-bf32-ef41fb78b640/ddef96f8-f009-4550-b86e-4232ef25eba1"
-          (reference "C13") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C_Polarized") (at 157.48 77.47 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 8d18bf83-ab88-4355-84eb-7543f789cc87)
-    (property "Reference" "C2" (at 158.115 74.93 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "1µF" (at 158.115 80.01 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" (at 158.4452 81.28 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 157.48 77.47 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 7f80759d-647e-4e85-84bc-6a8e75ca74be))
-    (pin "2" (uuid c5d34502-07a9-4b6e-b559-bd6651e9075d))
-    (instances
-      (project "MAX232"
-        (path "/7aad7925-27f0-4b66-834a-6e436d0799e4"
-          (reference "C2") (unit 1)
-        )
-      )
-      (project "MFC"
-        (path "/b2d5fb00-0584-4253-bf32-ef41fb78b640/ddef96f8-f009-4550-b86e-4232ef25eba1"
-          (reference "C11") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C_Polarized") (at 104.14 77.47 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 9fe27111-2b9d-4479-ac13-bf33b6fccce8)
-    (property "Reference" "C1" (at 100.33 74.93 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "1µF" (at 96.52 80.01 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" (at 105.1052 81.28 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 104.14 77.47 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid daaba5d6-5b0e-48c3-bf1f-0bb7c10ce475))
-    (pin "2" (uuid 7b255bca-305f-4835-acba-f71d253d67f3))
-    (instances
-      (project "MAX232"
-        (path "/7aad7925-27f0-4b66-834a-6e436d0799e4"
-          (reference "C1") (unit 1)
-        )
-      )
-      (project "MFC"
-        (path "/b2d5fb00-0584-4253-bf32-ef41fb78b640/ddef96f8-f009-4550-b86e-4232ef25eba1"
-          (reference "C9") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "PCM_4ms_Power-symbol:GND") (at 173.99 106.68 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid b752ab79-832a-472e-a051-f862f79d78f7)
-    (property "Reference" "#PWR01" (at 173.99 113.03 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 173.99 111.76 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 173.99 106.68 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 173.99 106.68 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid fb4564cb-4aa4-42ad-b348-a1809c4d6d89))
-    (instances
-      (project "MAX232"
-        (path "/7aad7925-27f0-4b66-834a-6e436d0799e4"
-          (reference "#PWR01") (unit 1)
-        )
-      )
-      (project "MFC"
-        (path "/b2d5fb00-0584-4253-bf32-ef41fb78b640/ddef96f8-f009-4550-b86e-4232ef25eba1"
-          (reference "#PWR011") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C_Polarized") (at 173.99 100.33 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid bd4c5937-8783-4701-939a-2a5c0316aef2)
-    (property "Reference" "C4" (at 173.355 102.87 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "1µF" (at 173.355 97.79 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" (at 173.0248 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 173.99 100.33 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e79b68e4-e939-4e9e-8c0a-08d9d79c3623))
-    (pin "2" (uuid 5d2e7da5-c6ed-4256-b9b3-4c32a21f9014))
-    (instances
-      (project "MAX232"
-        (path "/7aad7925-27f0-4b66-834a-6e436d0799e4"
-          (reference "C4") (unit 1)
-        )
-      )
-      (project "MFC"
-        (path "/b2d5fb00-0584-4253-bf32-ef41fb78b640/ddef96f8-f009-4550-b86e-4232ef25eba1"
-          (reference "C12") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "PCM_4ms_Power-symbol:GND") (at 130.81 129.54 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid bfab0b70-ba39-46af-b1a4-07527d4ca4ec)
-    (property "Reference" "#PWR03" (at 130.81 135.89 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 130.81 134.62 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 130.81 129.54 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 130.81 129.54 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 975eea75-ab33-4837-96d0-5d1a92092c2a))
-    (instances
-      (project "MAX232"
-        (path "/7aad7925-27f0-4b66-834a-6e436d0799e4"
-          (reference "#PWR03") (unit 1)
-        )
-      )
-      (project "MFC"
-        (path "/b2d5fb00-0584-4253-bf32-ef41fb78b640/ddef96f8-f009-4550-b86e-4232ef25eba1"
-          (reference "#PWR0106") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Interface_UART:MAX232") (at 130.81 96.52 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid f9742dbb-4baf-435d-a4c8-6252d6121d55)
-    (property "Reference" "U1" (at 132.7659 67.31 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Value" "MAX232" (at 132.7659 69.85 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm" (at 132.08 123.19 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Datasheet" "http://www.ti.com/lit/ds/symlink/max232.pdf" (at 130.81 93.98 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid c9862690-d60a-4064-8388-7e484ca726eb))
-    (pin "10" (uuid 2b550a60-eb61-4e9b-9af3-6c6a8429aee5))
-    (pin "11" (uuid 73f3c5a6-3c42-4070-ac14-b4cc1726195a))
-    (pin "12" (uuid 361269b8-d190-4b5f-9e69-a551c22e54dd))
-    (pin "13" (uuid 311aa329-d95d-433f-b72c-3dc14a0c119b))
-    (pin "14" (uuid 03780719-eae6-413d-a77b-d5ce87f3bf16))
-    (pin "15" (uuid 4a7d5aec-d662-4cbd-88e8-220bd893e4fc))
-    (pin "16" (uuid be3781f1-7c63-4478-a7f0-3490aa1c72f1))
-    (pin "2" (uuid ed6b976f-c66c-4494-8124-e4cc46057b96))
-    (pin "3" (uuid 57d043d0-9a06-44f0-9793-68a69405e97f))
-    (pin "4" (uuid 57b81d81-f8ab-4456-a267-b526d85253cd))
-    (pin "5" (uuid 45835ba0-2978-4ec8-8dd4-f7ed22816b31))
-    (pin "6" (uuid 3b38e624-ffc7-48e4-8a1c-6b251a3d2229))
-    (pin "7" (uuid cf7808bd-a850-4888-b561-e1fc982f3732))
-    (pin "8" (uuid d4bc6ddb-813e-4a45-b142-e532d3be51f0))
-    (pin "9" (uuid 0bd09bb6-2496-42ec-8dd9-0c9b8c2eb7bc))
-    (instances
-      (project "MAX232"
-        (path "/7aad7925-27f0-4b66-834a-6e436d0799e4"
-          (reference "U1") (unit 1)
-        )
-      )
-      (project "MFC"
-        (path "/b2d5fb00-0584-4253-bf32-ef41fb78b640/ddef96f8-f009-4550-b86e-4232ef25eba1"
-          (reference "U1") (unit 1)
-        )
-      )
-    )
-  )
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "d2c411fd-60aa-4a7d-9ace-6449cbd2aa05")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Device:C_Polarized"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Polarized"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Polarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Polarized_0_1"
+				(rectangle
+					(start -2.286 0.508)
+					(end 2.286 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.286) (xy -0.762 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.794) (xy -1.27 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.286 -0.508)
+					(end -2.286 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "C_Polarized_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Interface_UART:MAX232"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -2.54 28.575 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Value" "MAX232"
+				(at -2.54 26.67 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Footprint" ""
+				(at 1.27 -26.67 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/max232.pdf"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Dual RS232 driver/receiver, 5V supply, 120kb/s, 0C-70C"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "rs232 uart transceiver line-driver"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOIC*P1.27mm* DIP*W7.62mm* TSSOP*4.4x5mm*P0.65mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MAX232_0_0"
+				(text "LOGIC"
+					(at -11.43 -22.86 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "RS232"
+					(at 11.43 -22.86 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "MAX232_0_1"
+				(rectangle
+					(start -15.24 -25.4)
+					(end 15.24 25.4)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 -0.635) (xy -3.81 -4.445) (xy 0 -2.54) (xy -3.81 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 -2.54) (xy -8.255 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 -5.715) (xy -3.81 -9.525) (xy 0 -7.62) (xy -3.81 -5.715)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 -7.62) (xy -8.255 -7.62)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.175 -12.7) (xy -8.255 -12.7)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.175 -17.78) (xy -8.255 -17.78)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -2.54 -12.7)
+					(radius 0.635)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -2.54 -17.78)
+					(radius 0.635)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0.635 -2.54)
+					(radius 0.635)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0.635 -7.62)
+					(radius 0.635)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 6.35 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -7.62) (xy 6.35 -7.62)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 -10.795) (xy 1.905 -14.605) (xy -1.905 -12.7) (xy 1.905 -10.795)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 -12.7) (xy 6.35 -12.7)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 -15.875) (xy 1.905 -19.685) (xy -1.905 -17.78) (xy 1.905 -15.875)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 -17.78) (xy 6.35 -17.78)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MAX232_1_1"
+				(pin passive line
+					(at -20.32 22.86 0)
+					(length 5.08)
+					(name "C1+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -20.32 15.24 0)
+					(length 5.08)
+					(name "C1-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -20.32 -2.54 0)
+					(length 5.08)
+					(name "T1IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -20.32 -7.62 0)
+					(length 5.08)
+					(name "T2IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -20.32 -12.7 0)
+					(length 5.08)
+					(name "R1OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -20.32 -17.78 0)
+					(length 5.08)
+					(name "R2OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 30.48 270)
+					(length 5.08)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -30.48 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 22.86 180)
+					(length 5.08)
+					(name "C2+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 15.24 180)
+					(length 5.08)
+					(name "C2-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 20.32 10.16 180)
+					(length 5.08)
+					(name "VS+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 20.32 2.54 180)
+					(length 5.08)
+					(name "VS-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 20.32 -2.54 180)
+					(length 5.08)
+					(name "T1OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 20.32 -7.62 180)
+					(length 5.08)
+					(name "T2OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 20.32 -12.7 180)
+					(length 5.08)
+					(name "R1IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 20.32 -17.78 180)
+					(length 5.08)
+					(name "R2IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_4ms_Power-symbol:+5V"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+5V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+5V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(hide yes)
+					(name "+5V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_4ms_Power-symbol:GND"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "RS232 ±12v"
+		(exclude_from_sim no)
+		(at 182.88 181.61 0)
+		(effects
+			(font
+				(size 10 10)
+			)
+			(justify left bottom)
+		)
+		(uuid "b6212b3b-6cfa-4a70-85b1-ebcaf1b068dc")
+	)
+	(junction
+		(at 130.81 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "19e165d7-772c-4bcb-9bf3-90b61f1c33f1")
+	)
+	(wire
+		(pts
+			(xy 184.15 96.52) (xy 184.15 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "143a54c8-1a74-4f12-8df0-6ed4affb52fc")
+	)
+	(wire
+		(pts
+			(xy 151.13 114.3) (xy 156.21 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "281f021b-d823-453f-9956-08d2195ca5b3")
+	)
+	(wire
+		(pts
+			(xy 151.13 81.28) (xy 157.48 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cfe1446-da79-4075-b02b-418d3cf8a8b8")
+	)
+	(wire
+		(pts
+			(xy 104.14 81.28) (xy 110.49 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d8a20ba-ad14-4ad0-b2d3-10d139ed10f8")
+	)
+	(wire
+		(pts
+			(xy 173.99 104.14) (xy 173.99 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ec62886-c263-4d7f-9faa-7d7c5e2c1ec6")
+	)
+	(wire
+		(pts
+			(xy 151.13 104.14) (xy 156.21 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33d331d1-07db-4851-ad37-521b1028d1bf")
+	)
+	(wire
+		(pts
+			(xy 151.13 93.98) (xy 173.99 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3463f0ef-3bf6-4806-ba49-1a128d1bdc86")
+	)
+	(wire
+		(pts
+			(xy 130.81 48.26) (xy 130.81 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3bc57329-f8b9-4fe1-a60d-b6800e6743a5")
+	)
+	(wire
+		(pts
+			(xy 105.41 109.22) (xy 110.49 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4eeb75fb-2353-4973-86ae-02aa7488ac14")
+	)
+	(wire
+		(pts
+			(xy 151.13 86.36) (xy 184.15 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5594c2b6-1f00-4502-81d8-91e20ee82757")
+	)
+	(wire
+		(pts
+			(xy 105.41 104.14) (xy 110.49 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "946207b1-8a78-458a-9a03-ad0f78ceeb3a")
+	)
+	(wire
+		(pts
+			(xy 151.13 109.22) (xy 156.21 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c06715e-bd82-4cd3-96ef-8a8444c12aa3")
+	)
+	(wire
+		(pts
+			(xy 184.15 104.14) (xy 184.15 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a28d827c-10a2-4167-850b-1421684d0d43")
+	)
+	(wire
+		(pts
+			(xy 105.41 99.06) (xy 110.49 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a807b939-9d1c-4d2e-8ac0-c7aecaca3464")
+	)
+	(wire
+		(pts
+			(xy 173.99 93.98) (xy 173.99 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c23f6835-0178-486a-8cbb-85b26348fcd2")
+	)
+	(wire
+		(pts
+			(xy 130.81 127) (xy 130.81 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c457e9f1-704a-4f50-a8da-f724abd5ac4a")
+	)
+	(wire
+		(pts
+			(xy 138.43 52.07) (xy 138.43 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cba9d8a9-949b-4f8d-acd1-28d1f869c3ea")
+	)
+	(wire
+		(pts
+			(xy 151.13 73.66) (xy 157.48 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d561e58a-15b6-44a4-a80f-d8553646fd21")
+	)
+	(wire
+		(pts
+			(xy 151.13 99.06) (xy 156.21 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc1edb14-4a8d-495f-9040-7776ab8d2d47")
+	)
+	(wire
+		(pts
+			(xy 105.41 114.3) (xy 110.49 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6148104-baa3-43d7-95e1-58ed6cfb0d5d")
+	)
+	(wire
+		(pts
+			(xy 130.81 50.8) (xy 130.81 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7ab5d09-f1c0-4d5b-b5f3-33a2a57081da")
+	)
+	(wire
+		(pts
+			(xy 104.14 73.66) (xy 110.49 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e942415e-9eae-43e8-b7dc-83a1f5e5d139")
+	)
+	(wire
+		(pts
+			(xy 138.43 50.8) (xy 130.81 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3a3b49b-e253-4f5c-940b-bafeba040cf5")
+	)
+	(wire
+		(pts
+			(xy 138.43 59.69) (xy 138.43 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9bd107f-88ca-4624-9067-0e8ac9154dc6")
+	)
+	(hierarchical_label "R2_Out"
+		(shape input)
+		(at 105.41 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "18aa3f67-75d5-422b-afbb-8a32d73e7e96")
+	)
+	(hierarchical_label "R2_In"
+		(shape input)
+		(at 156.21 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "345f53c2-9e1f-45fc-9953-36b28f00c1ba")
+	)
+	(hierarchical_label "T2_In"
+		(shape input)
+		(at 105.41 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "538a04ff-88ca-4021-82bd-f6a98eb9555c")
+	)
+	(hierarchical_label "R1_In"
+		(shape input)
+		(at 156.21 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "579aebb6-dc35-4e3e-ab8c-d1b40ab2c102")
+	)
+	(hierarchical_label "R1_Out"
+		(shape input)
+		(at 105.41 109.22 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "81dd2889-1d41-4c92-ba65-84bef5d57f89")
+	)
+	(hierarchical_label "T1_In"
+		(shape input)
+		(at 105.41 99.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a0939d19-5e8d-4a06-a825-4b7f47f2b8eb")
+	)
+	(hierarchical_label "T2_Out"
+		(shape input)
+		(at 156.21 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c3358317-5883-4868-becd-c7ddb776b78c")
+	)
+	(hierarchical_label "T1_Out"
+		(shape input)
+		(at 156.21 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d45934f6-69e4-41da-b24d-783a714980b9")
+	)
+	(symbol
+		(lib_id "PCM_4ms_Power-symbol:+5V")
+		(at 130.81 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "03a0fba9-6379-48bb-a8e3-9dedc4ed2f5e")
+		(property "Reference" "#PWR0107"
+			(at 130.81 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 130.81 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 130.81 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2fbaecf8-010d-4729-8f3a-e588ecc767c3")
+		)
+		(instances
+			(project "MAX232"
+				(path "/7aad7925-27f0-4b66-834a-6e436d0799e4"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+			(project "MFC"
+				(path "/b2d5fb00-0584-4253-bf32-ef41fb78b640/ddef96f8-f009-4550-b86e-4232ef25eba1"
+					(reference "#PWR0107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 138.43 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "09aefab9-60e0-4ab3-b4ed-94a756e13676")
+		(property "Reference" "C10"
+			(at 139.065 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1µF"
+			(at 139.065 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+			(at 139.3952 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 138.43 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2d73ba42-efc8-4bff-af7c-5f74f9675d31")
+		)
+		(pin "2"
+			(uuid "b1aa878d-e299-4638-a2df-7c02cc1cd2c0")
+		)
+		(instances
+			(project "MAX232"
+				(path "/7aad7925-27f0-4b66-834a-6e436d0799e4"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+			(project "MFC"
+				(path "/b2d5fb00-0584-4253-bf32-ef41fb78b640/ddef96f8-f009-4550-b86e-4232ef25eba1"
+					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_4ms_Power-symbol:GND")
+		(at 184.15 106.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "25e8b1ef-ecaf-4347-a5e0-2802af48d702")
+		(property "Reference" "#PWR012"
+			(at 184.15 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 187.96 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 184.15 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 184.15 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 184.15 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0bf17cf5-4db7-42c0-9087-63db8a2e46ba")
+		)
+		(instances
+			(project "MAX232"
+				(path "/7aad7925-27f0-4b66-834a-6e436d0799e4"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+			(project "MFC"
+				(path "/b2d5fb00-0584-4253-bf32-ef41fb78b640/ddef96f8-f009-4550-b86e-4232ef25eba1"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_4ms_Power-symbol:GND")
+		(at 138.43 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3a2d1707-a96d-4028-9f8a-33788a3fb9c6")
+		(property "Reference" "#PWR010"
+			(at 138.43 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 142.24 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 138.43 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 138.43 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8b1a0f11-f516-4462-953a-a8d9994c183b")
+		)
+		(instances
+			(project "MAX232"
+				(path "/7aad7925-27f0-4b66-834a-6e436d0799e4"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+			(project "MFC"
+				(path "/b2d5fb00-0584-4253-bf32-ef41fb78b640/ddef96f8-f009-4550-b86e-4232ef25eba1"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 184.15 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "76c6a364-df30-4eaa-8ac6-b3e3104f2543")
+		(property "Reference" "C13"
+			(at 184.785 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1µF"
+			(at 184.785 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+			(at 185.1152 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 184.15 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 184.15 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f592f8ef-1327-4193-bef2-43c116e42cf2")
+		)
+		(pin "2"
+			(uuid "bd12b5c2-c4ec-4613-b70f-188fba3975b2")
+		)
+		(instances
+			(project "MAX232"
+				(path "/7aad7925-27f0-4b66-834a-6e436d0799e4"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+			(project "MFC"
+				(path "/b2d5fb00-0584-4253-bf32-ef41fb78b640/ddef96f8-f009-4550-b86e-4232ef25eba1"
+					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 157.48 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8d18bf83-ab88-4355-84eb-7543f789cc87")
+		(property "Reference" "C11"
+			(at 158.115 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1µF"
+			(at 158.115 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+			(at 158.4452 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 157.48 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 157.48 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7f80759d-647e-4e85-84bc-6a8e75ca74be")
+		)
+		(pin "2"
+			(uuid "c5d34502-07a9-4b6e-b559-bd6651e9075d")
+		)
+		(instances
+			(project "MAX232"
+				(path "/7aad7925-27f0-4b66-834a-6e436d0799e4"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+			(project "MFC"
+				(path "/b2d5fb00-0584-4253-bf32-ef41fb78b640/ddef96f8-f009-4550-b86e-4232ef25eba1"
+					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 104.14 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9fe27111-2b9d-4479-ac13-bf33b6fccce8")
+		(property "Reference" "C9"
+			(at 100.33 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1µF"
+			(at 96.52 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+			(at 105.1052 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.14 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 104.14 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "daaba5d6-5b0e-48c3-bf1f-0bb7c10ce475")
+		)
+		(pin "2"
+			(uuid "7b255bca-305f-4835-acba-f71d253d67f3")
+		)
+		(instances
+			(project "MAX232"
+				(path "/7aad7925-27f0-4b66-834a-6e436d0799e4"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+			(project "MFC"
+				(path "/b2d5fb00-0584-4253-bf32-ef41fb78b640/ddef96f8-f009-4550-b86e-4232ef25eba1"
+					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_4ms_Power-symbol:GND")
+		(at 173.99 106.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b752ab79-832a-472e-a051-f862f79d78f7")
+		(property "Reference" "#PWR011"
+			(at 173.99 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 173.99 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 173.99 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 173.99 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fb4564cb-4aa4-42ad-b348-a1809c4d6d89")
+		)
+		(instances
+			(project "MAX232"
+				(path "/7aad7925-27f0-4b66-834a-6e436d0799e4"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+			(project "MFC"
+				(path "/b2d5fb00-0584-4253-bf32-ef41fb78b640/ddef96f8-f009-4550-b86e-4232ef25eba1"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 173.99 100.33 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bd4c5937-8783-4701-939a-2a5c0316aef2")
+		(property "Reference" "C12"
+			(at 173.355 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1µF"
+			(at 173.355 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+			(at 173.0248 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 173.99 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 173.99 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e79b68e4-e939-4e9e-8c0a-08d9d79c3623")
+		)
+		(pin "2"
+			(uuid "5d2e7da5-c6ed-4256-b9b3-4c32a21f9014")
+		)
+		(instances
+			(project "MAX232"
+				(path "/7aad7925-27f0-4b66-834a-6e436d0799e4"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+			(project "MFC"
+				(path "/b2d5fb00-0584-4253-bf32-ef41fb78b640/ddef96f8-f009-4550-b86e-4232ef25eba1"
+					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_4ms_Power-symbol:GND")
+		(at 130.81 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bfab0b70-ba39-46af-b1a4-07527d4ca4ec")
+		(property "Reference" "#PWR0106"
+			(at 130.81 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 130.81 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 130.81 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "975eea75-ab33-4837-96d0-5d1a92092c2a")
+		)
+		(instances
+			(project "MAX232"
+				(path "/7aad7925-27f0-4b66-834a-6e436d0799e4"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+			(project "MFC"
+				(path "/b2d5fb00-0584-4253-bf32-ef41fb78b640/ddef96f8-f009-4550-b86e-4232ef25eba1"
+					(reference "#PWR0106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Interface_UART:MAX232")
+		(at 130.81 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f9742dbb-4baf-435d-a4c8-6252d6121d55")
+		(property "Reference" "U1"
+			(at 132.7659 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "MAX232"
+			(at 132.7659 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm"
+			(at 132.08 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/max232.pdf"
+			(at 130.81 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 130.81 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c9862690-d60a-4064-8388-7e484ca726eb")
+		)
+		(pin "10"
+			(uuid "2b550a60-eb61-4e9b-9af3-6c6a8429aee5")
+		)
+		(pin "11"
+			(uuid "73f3c5a6-3c42-4070-ac14-b4cc1726195a")
+		)
+		(pin "12"
+			(uuid "361269b8-d190-4b5f-9e69-a551c22e54dd")
+		)
+		(pin "13"
+			(uuid "311aa329-d95d-433f-b72c-3dc14a0c119b")
+		)
+		(pin "14"
+			(uuid "03780719-eae6-413d-a77b-d5ce87f3bf16")
+		)
+		(pin "15"
+			(uuid "4a7d5aec-d662-4cbd-88e8-220bd893e4fc")
+		)
+		(pin "16"
+			(uuid "be3781f1-7c63-4478-a7f0-3490aa1c72f1")
+		)
+		(pin "2"
+			(uuid "ed6b976f-c66c-4494-8124-e4cc46057b96")
+		)
+		(pin "3"
+			(uuid "57d043d0-9a06-44f0-9793-68a69405e97f")
+		)
+		(pin "4"
+			(uuid "57b81d81-f8ab-4456-a267-b526d85253cd")
+		)
+		(pin "5"
+			(uuid "45835ba0-2978-4ec8-8dd4-f7ed22816b31")
+		)
+		(pin "6"
+			(uuid "3b38e624-ffc7-48e4-8a1c-6b251a3d2229")
+		)
+		(pin "7"
+			(uuid "cf7808bd-a850-4888-b561-e1fc982f3732")
+		)
+		(pin "8"
+			(uuid "d4bc6ddb-813e-4a45-b142-e532d3be51f0")
+		)
+		(pin "9"
+			(uuid "0bd09bb6-2496-42ec-8dd9-0c9b8c2eb7bc")
+		)
+		(instances
+			(project "MAX232"
+				(path "/7aad7925-27f0-4b66-834a-6e436d0799e4"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+			(project "MFC"
+				(path "/b2d5fb00-0584-4253-bf32-ef41fb78b640/ddef96f8-f009-4550-b86e-4232ef25eba1"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
 )
